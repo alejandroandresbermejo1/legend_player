@@ -1,0 +1,101 @@
+<div class="screen-container">
+  <div class="card glass-panel report-card">
+    <div class="report-header">
+      <div class="header-badge">
+        <svg class="header-svg-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.81z"
+          />
+        </svg>
+        LEGAL & DERECHOS
+      </div>
+      <h1 class="report-title">Aviso Legal, Derechos de Imagen y Reportes</h1>
+      <p class="report-subtitle">
+        Información importante sobre la propiedad intelectual, política de cookies y contacto
+        directo con el desarrollador.
+      </p>
+    </div>
+
+    <div class="report-content-grid">
+      <div class="info-block">
+        <div class="info-block-header">
+          <div class="block-icon">
+            <svg class="block-svg-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 2.18l7 3.11v4.71c0 4.49-3.08 8.68-7 9.82-3.92-1.14-7-5.33-7-9.82V6.29l7-3.11z"
+              />
+            </svg>
+          </div>
+          <h3>Derechos de Imagen y Marcas</h3>
+        </div>
+        <p>
+          <strong>Legend Player: Career Mode</strong> es un proyecto conceptual y educativo sin
+          ánimo de lucro. Todos los nombres de clubes, escudos, logotipos, marcas comerciales y
+          banderas mostrados pertenecen a sus respectivos propietarios y entidades deportivas.
+        </p>
+        <p>
+          Las imágenes y escudos incorporados se utilizan únicamente con fines ilustrativos y de
+          identificación dentro del juego de simulación.
+        </p>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-header">
+          <div class="block-icon">
+            <svg class="block-svg-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+              />
+            </svg>
+          </div>
+          <h3>Política de Cookies y Almacenamiento</h3>
+        </div>
+        <p>
+          Este sitio web no utiliza cookies de rastreo de terceros ni vende datos a ningún
+          anunciante.
+        </p>
+        <p>
+          Utilizamos únicamente el almacenamiento de sesión del navegador
+          (<code>sessionStorage</code>) para guardar el progreso de tu partida mientras mantengas la
+          pestaña abierta.
+        </p>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-header">
+          <div class="block-icon">
+            <svg class="block-svg-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+              />
+            </svg>
+          </div>
+          <h3>Contacto y Reclamaciones</h3>
+        </div>
+        <p>
+          Si eres representante legal o titular de los derechos de algún club, marca o imagen y
+          deseas solicitar la retirada, modificación o rectificación de cualquier contenido, ponte
+          en contacto directo conmigo.
+        </p>
+        <div class="email-card">
+          <span class="email-label">CORREO DE CONTACTO DIRECTO:</span>
+          <a [href]="'mailto:' + contactEmail" class="email-link">
+            <svg class="email-svg-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+              />
+            </svg>
+            {{ contactEmail }}
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="report-actions">
+      <button type="button" class="btn-back" (click)="goBack()">
+        <span class="key-badge">ESC</span>
+        Volver al Juego
+      </button>
+    </div>
+  </div>
+</div>

@@ -2,11 +2,12 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
-    "packageManager": "pnpm"
+    "packageManager": "pnpm",
+    "analytics": false
   },
   "newProjectRoot": "projects",
   "projects": {
-    "legend-player-career-mode": {
+    "legend_player": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -61,10 +62,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "legend-player-career-mode:build:production"
+              "buildTarget": "legend_player:build:production"
             },
             "development": {
-              "buildTarget": "legend-player-career-mode:build:development"
+              "buildTarget": "legend_player:build:development"
             }
           },
           "defaultConfiguration": "development"

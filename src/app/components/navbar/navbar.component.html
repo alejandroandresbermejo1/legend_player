@@ -1,0 +1,23 @@
+<nav class="navbar">
+  <div class="nav-brand">
+    <img src="logo.jpg" alt="Logo" class="brand-logo-img" />
+    <span class="brand-name">Legend Player: <span class="highlight"> Career Mode</span></span>
+  </div>
+  <div class="nav-actions">
+    <button type="button" class="report-btn" [class.active]="screen() === 'report'" (click)="openReport()">
+      <span class="key-badge">R</span>
+      <span class="btn-text">Reportar / Aviso Legal</span>
+    </button>
+    @if (screen() === 'career-main') {
+      <button type="button" class="reset-btn" (click)="resetGame()">
+        <span class="key-badge">ESC</span>
+        <span class="btn-text">Reiniciar Carrera</span>
+      </button>
+    } @else if (screen() === 'game-over') {
+      <button type="button" class="reset-btn game-over-nav-btn" (click)="resetGame()">
+        <span class="key-badge">ESC</span>
+        <span class="btn-text">Nueva Carrera</span>
+      </button>
+    }
+  </div>
+</nav>

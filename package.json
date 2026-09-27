@@ -1,5 +1,5 @@
 {
-  "name": "legend-player-career-mode",
+  "name": "legend_player",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -21,7 +21,7 @@
     ]
   },
   "private": true,
-  "packageManager": "pnpm@12.3.4",
+  "packageManager": "pnpm@12.6.0",
   "dependencies": {
     "@angular/common": "^21.0.0",
     "@angular/compiler": "^21.0.0",

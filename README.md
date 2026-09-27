@@ -1,59 +1,26 @@
-# LegendPlayerCareerMode
+# Legend Player: Modo Carrera
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.4.
+**Legend Player** es un juego interactivo de simulación de carrera futbolística. Eliges a tu jugador, seleccionas tu posición, dorsal y nacionalidad, y vives toda una trayectoria profesional desde los 16 hasta los 40 años compitiendo por llevar a tu jugador a lo más alto del fútbol mundial.
 
-## Development server
+## ¿Qué incluye el juego?
 
-To start a local development server, run:
+- **Evolución y Simulación de Temporadas**: Tu rendimiento, el prestigio del club y tu posición influyen directamente en la mejora de OVR, la valoración de mercado y la conquista de títulos.
+- **Eventos y Decisiones de Carrera**: Dilemas con ruleta de riesgo que ponen a prueba tu disciplina, forma física y relación con la directiva o la prensa.
+- **Equipos y Selecciones Reales**: Compite en ligas de primera, segunda y tercera división de España, Inglaterra, Italia, Alemania, Francia y América, e integra la Selección Nacional de tu país.
+- **Palmarés y Galardones**: Colecciona títulos de club, torneos internacionales y premios individuales como el Balón de Oro, Golden Boy, Bota de Oro o Trofeo Zamora.
+- **Control por Teclado**: Diseñado para jugar de forma fluida mediante atajos rápidos (`1`, `2`, `3`, `R`, `ESC`).
+
+## Tecnologías
+
+- **Angular** (Componentes Standalone y Signals)
+- **TypeScript**
+- **Vanilla CSS** (Estética Dark Glassmorphism)
+
+## Cómo jugarlo localmente
 
 ```bash
+npm install
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Abre `http://localhost:4200/` en tu navegador.
