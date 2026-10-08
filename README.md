@@ -10,11 +10,14 @@
 - **Palmarés y Galardones**: Colecciona títulos de club, torneos internacionales y premios individuales como el Balón de Oro, Golden Boy, Bota de Oro o Trofeo Zamora.
 - **Control por Teclado**: Diseñado para jugar de forma fluida mediante atajos rápidos (`1`, `2`, `3`, `R`, `ESC`).
 
-## Tecnologías
+## Tecnologías y Arquitectura Web
 
-- **Angular** (Componentes Standalone y Signals)
-- **TypeScript**
-- **Vanilla CSS** (Estética Dark Glassmorphism)
+- **Angular 21**
+- **Peticiones y Carga de Imágenes**:
+  - **Escudos de Equipos**: Peticiones a `football-data.org`, `footylogos.com` y `bibliotecariodelfutbol.com`.
+  - **Banderas**: Integración con `flagcdn.com`.
+  - **Sistema de Fallback**: Función `handleBadgeError` para manejar fallos de carga solicitando escudos alternativos (SVG, WebP, PNG) o banderas.
+- **Despliegue y Métricas**: `@vercel/analytics` para obtener analíticas del juego.
 
 ## Cómo jugarlo localmente
 
